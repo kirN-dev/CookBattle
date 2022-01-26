@@ -10,14 +10,11 @@ namespace CookBattle.Test
 {
 	public struct Ingredient : IComparable
 	{
-		public Ingredient(string name, Color sprite)
+		public Ingredient(string name)
 		{
 			Name = name;
-			Sprite = sprite;
 		}
 		public string Name { get; }
-		
-		public Color Sprite { get; }
 
 		public int CompareTo(object obj)
 		{

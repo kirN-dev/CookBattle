@@ -16,16 +16,34 @@ namespace CookBattle.Test
 
 		public RecipeBook()
 		{
-			_recipeBook.Add("Burger",
-				new Dish("Burger",
-				new Ingredient("Breed", Color.SandyBrown),
-				new Ingredient("Cutlet", Color.Brown),
-				new Ingredient("Breed", Color.SandyBrown)));
+			_recipeBook.Add("Гамбургер",
+				new Dish("Гамбургер",
+				new Ingredient("Булочка"),
+				new Ingredient("Котлета"),
+				new Ingredient("Булочка")));
 
-			_recipeBook.Add("Salad",
-				new Dish("Salad",
-				new Ingredient("Tomato", Color.OrangeRed),
-				new Ingredient("Lettuce", Color.LightSlateGray)));
+			_recipeBook.Add("Салат",
+				new Dish("Салат",
+				new Ingredient("Латук"),
+				new Ingredient("Помидор")));
+
+			_recipeBook.Add("Суши",
+				new Dish("Суши",
+				new Ingredient("Нори"),
+				new Ingredient("Рис"),
+				new Ingredient("Огурец")));
+			
+			_recipeBook.Add("Хот-дог",
+				new Dish("Хот-дог",
+				new Ingredient("Булочка"),
+				new Ingredient("Сосиска"),
+				new Ingredient("Булочка")));
+			
+			_recipeBook.Add("Паста",
+				new Dish("Паста",
+				new Ingredient("Макароны"),
+				new Ingredient("Фарш"),
+				new Ingredient("Помидор")));
 		}
 
 		public bool ChekedRecipe(List<Dish> orders, Dish checkedDish, out string nameDish)
